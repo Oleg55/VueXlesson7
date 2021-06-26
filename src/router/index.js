@@ -6,6 +6,7 @@ import ProductsList from '@/views/ProductsList';
 import Product from '@/views/Product';
 import CheckoutStep1 from '@/views/checkout/Step1';
 import CheckoutStep2 from '@/views/checkout/Step2';
+import E404 from '@/views/E404';
 
 let routes = [
 	{
@@ -34,14 +35,15 @@ let routes = [
 		component: ProductsList
 	},
 	{
+		name: 'products-item',
 		path: '/product/:id',
 		component: Product
-	}
-	/*
-		// hw, 
-		path: any -> '/:pathMatch(.*)*'
+	},
+	{
+		name: 'E404', 
+		path: '/:pathMatch(.*)*',
 		component: E404
-	*/
+	}
 ];
 
 export default createRouter({

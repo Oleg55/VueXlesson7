@@ -1,13 +1,12 @@
 <template>
-	<div>
-		<h1>Page not found</h1>
-		<hr>
-		Start from main page
-	</div>
+	<app-e404></app-e404>
 </template>
 
 <script>
+	import AppE404 from '@/components/E404';
 	export default {
-		
+		components: {
+			AppE404
+		}
 	}
 </script>
